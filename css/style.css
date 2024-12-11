@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*,::before,::after{margin: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+ul{ list-style: none; padding: 0;}
+img{ vertical-align: bottom;}
+button{ cursor: pointer; padding: 0; font: 16px var(--ff);}
+input,select{ font-family: var(--ff);}
+label{ display:inline-block;}
+
+@font-face {
+    font-family: palatino;
+    src: url(../fonts/Palatino-Linotype-W02-Italic.woff2);
+}
+
+
+html{ font-size: 15px; --ff: "Montserrat", sans-serif;}
+body{ font: 16px var(--ff);}
+.palatino{ font: 43px palatino, cursive;}
+
+
+
+
+
+/* 12 grids */
+.container{ max-width: 1230px; margin: auto; padding: 0 1rem;}
+.container-lg{ max-width: 1400px; margin: auto; padding: 0 1rem;}
+.container-full{ max-width: 100%; margin: auto; padding: 0 1rem;}
+
+.row{ display: flex; flex-flow: row wrap; margin: 0 -1rem; }
+[class^="col-"]{ flex: 1 0 auto; padding: 0 1rem;}
+.col-1{ flex-basis: 8.33%; max-width: 8.33%;}
+.col-2{ flex-basis: 16.66%; max-width: 16.66%;}
+.col-3{ flex-basis: 25%; max-width: 25%;}
+.col-4{ flex-basis: 33.33%; max-width: 33.33%;}
+.col-6{ flex-basis: 50%; max-width: 50%;}
+.col-8{ flex-basis: 66.66%; max-width: 66.66%;}
+.col-9{ flex-basis: 75%; max-width: 75%;}
+.col-10{ flex-basis: 83.33%; max-width: 83.33%;}
+.col-12{ flex-basis: 100%; max-width: 100%;}
+.flex{ display: flex;}
+.justify-space-bet{ justify-content: space-between;}
+.justify-right{ justify-content: right;}
+.align-center{ align-items: center;}
+.img-resp{ max-width: 100%; height: auto;}
+
+/* css */
+.wrap-1{ background: url(../img/bg1.webp) no-repeat center top/cover; color: #fff; }
+header{ padding: 47px 0;}
+.logo{ color: inherit;}
+.logo h1{ font-size: 42px; font-weight: 600;}
+nav li{ margin: 0 5px; }
+nav a{ color: inherit; font-size: 17px; font-weight: 600;  padding: 0 14px;}
+.menu{ background: none; border: none; float: right; display: none;}
+.menu+input{ display: none;}
+.menu+input:checked+nav{ opacity: 1; visibility: visible; }
+.banner{ padding: 130px 0 242px 0;}
+.banner .caption{ font-size: 65px; font-weight: 600; line-height: 68px; margin: 20px 0 40px;}
+.banner .des{ font-size: 23px; line-height: 32px; margin-bottom: 60px;}
+.link{ display: inline-block; width: 197px; border-radius: 30px; background: #fff; text-align: center; font: 600 17px/60px var(--ff); box-shadow: 0 4px #01020259;}
+.link.pink{ background: #f42267; color: #fff}
+.link.purple{ background: #5f40b8b3; color: #fff;}
+
+
+
+/* responsive */
+@media screen and (max-width:1420px){
+    
+}
+
+@media screen and (max-width:1250px){
+    html{ font-size: 14px;}
+    .logo h1{ font-size: 36px;}
+}
+
+
+@media screen and (max-width:980px){
+    .col-t-3{ flex-basis: 25%; max-width: 25%;}
+    .col-t-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-t-6{ flex-basis: 50%; max-width: 50%;}
+    .col-t-8{ flex-basis: 66.66%; max-width: 66.66%;}
+    .col-t-9{ flex-basis: 75%; max-width: 75%;}
+    .col-t-12{ flex-basis: 100%; max-width: 100%;}
+    .menu{ display: inline-block;}
+    nav{ opacity: 0; visibility: hidden; transition: 400ms; text-align: right; position: absolute; top: 80px; right: 0;}
+    nav ul{ flex-flow: column wrap;}
+    nav li{ margin-bottom: 1rem;}
+}
+
+
+@media screen and (max-width:767px){
+    html{ font-size: 13px;}
+    .col-m-6{ flex-basis: 50%; max-width: 50%;}
+}
+
+
+@media screen and (max-width:460px){
+    .col-p-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-p-6{ flex-basis: 50%; max-width: 50%;}
+    .col-p-12{ flex-basis: 100%; max-width: 100%;}
+    header{ padding: 20px 0;}
+    .logo h1{ font-size: 22px;}
+
+}
