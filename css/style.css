@@ -39,6 +39,7 @@ body{ font: 16px var(--ff);}
 .flex{ display: flex;}
 .justify-space-bet{ justify-content: space-between;}
 .justify-right{ justify-content: right;}
+.justify-center{ justify-content: center;}
 .align-center{ align-items: center;}
 .img-resp{ max-width: 100%; height: auto;}
 
@@ -54,7 +55,7 @@ nav a{ color: inherit; font-size: 17px; font-weight: 600;  padding: 0 14px;}
 .menu+input{ display: none;}
 .menu+input:checked+nav{ opacity: 1; visibility: visible; }
 .banner{ padding: 130px 0 242px 0;}
-.banner .caption{ font-size: 65px; font-weight: 600; line-height: 68px; margin: 20px 0 40px;}
+.banner h2.caption{ font-size: 65px; font-weight: 600; line-height: 68px; margin: 20px 0 40px;}
 .banner .des{ font-size: 23px; line-height: 32px; margin-bottom: 60px;}
 .link{ display: inline-block; width: 197px; border-radius: 30px; background: #fff; text-align: center; font: 600 17px/60px var(--ff); box-shadow: 0 4px #01020259; margin: 0 20px 20px 0;}
 .link.pink{ background: #f42267; color: #fff; }
@@ -66,21 +67,36 @@ nav a{ color: inherit; font-size: 17px; font-weight: 600;  padding: 0 14px;}
 
 .wrap-21{ position:relative; z-index: 0; padding: 100px 0 25px 0;color: #484848; background: #fff; }
 .wrap-22{ color: #fff; text-align: center; background: #4b2d7f; }
-.wrap-2 .caption{ font-size: 50px; line-height: 52px; font-weight: 600;}
+h2.caption{ font-size: 50px; line-height: 52px; font-weight: 600;}
 .tabs{ margin: 24px 0 50px; }
 .tabs a{ width: 129px; line-height: 46px; display: block; border-radius: 23px; background: #fff; color: inherit; text-align: center; font-weight: 600; font-size: 13px; }
 .tabs a.active{ background: #f42267; color: #fff;}
 .tab-data{ margin-top: 20px; }
 .tab-content{ display: none;  }
 .tab-content.active{ display: block;}
-.readmore{ display: block; width: 146px; line-height: 47px; background: #f42267; color: #fff; border-radius: 10px; text-align: center; box-shadow: 0 10px #ff5990; font-weight: 600; font-size: 15px; }
+.readmore{ display: inline-block; width: 146px; line-height: 47px; background: #f42267; color: #fff; border-radius: 10px; text-align: center; box-shadow: 0 10px #ff5990; font-weight: 600; font-size: 15px; }
 .achievements{ padding: 70px 0 90px; }
 .achievements.mid{ background: #40286a;}
 .count{ font-size: 50px; font-weight: 600;}
 .wrap-22 h3{ font-size: 30px; font-weight: 600; margin: 36px 0 23px;}
 .wrap-22 h3 small{ font-weight: 400; font-size: 25px;  }
-.wrap-22 .text{font-size: 15px; line-height: 24px; margin-top: 36px;}
+.text{font-size: 15px; line-height: 24px; margin-top: 36px;}
 .achievements img{ margin-bottom: 30px;}
+
+
+
+.wrap-3{ padding: 80px 0; background: url(../img/bg2.webp) no-repeat center top/cover; text-align: center; color: #fff; }
+
+
+.wrap-4{ background: #fff; padding: 90px 0;}
+.wrap-4 video{ max-width: 100%; height: auto;}
+
+
+.wrap-5{ background: #f1f1f1; padding: 70px 0; text-align: center; color: #333;}
+.wrap-5 .tabs a:not(.active){ background: none;}
+.wrap-5 .tabs ul{ margin-bottom: 2rem;}
+.wrap-5 .tabs img{ margin-bottom: 2rem;}
+
 
 
 
